@@ -9,7 +9,41 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- Modal -->
     
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Painel de Controle</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password">
+                  </div>
+                  
+                  <button class="btn btn-primary">Entrar na conta</button>
+                  <small class="form-text text-muted">
+                    Esqueceu a Senha? <a href="#">Clique Aqui</a>
+                  </small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fecha Modal -->
+
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
         <a href="index.html" class="navbar-brand">
             <img src="img/caravan.svg" alt="Caravan">
@@ -41,7 +75,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Login</a>
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">Login</a>
                 </li>
 
                 <li class="nav-item">
@@ -100,7 +134,7 @@
                   </div>
             </div>
 
-            <div class="col-lg-5 p-4 d-flex flex-column justify-content-center">
+            <div class="col-lg-5 p-4 align-self-center">
                 <h1 class="display-4">Realize a viagem do seu sonho</h1>
                 <p class="lead">O melhor local para escolher sua viagem é aqui na Caravan, mais de 12.000 excursões concluídas</p>
 
@@ -172,9 +206,154 @@
                     <p>Lorem Ipsum dolor sit ament, consectuart adispcplininh elitillo, nemo nulla.</p>
                 </div>
             </div>
+                <a href="plans.html" class="btn btn-primary btn-lg mt-5">Comprar Plano</a>
         </div>
-
     </section>
+
+    <section class="p-md-5" id="home-quote">
+        <blockquote class="blockquote p-md-5 p-3">
+            <p class="display-4 text-white text-ceter"><em>"A felicidade não está na estrada que leva a algum lugar. A felicidade se baseia nas experiências vividas ao percorrer a própria estrada"</p></em>
+            <footer class="blockquote-footer text-white">
+                Matheus Lima
+            </footer>
+        </blockquote>
+    </section>
+
+    <section class="container">
+        <div class="my-5 text-center">   
+            <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+            <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+        </div>   
+
+        <div class="row justify-content-center">
+            <div class="col-md-6" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="heading1">
+                        <a href="collapse1" class="lead" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                          -> É possível cancelar a viagem?
+                        </a>
+                    </div>
+                    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                    <div class="card-body">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="heading2">
+                        <a href="collapse2" class="lead" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                          -> Qual a garantia que tenho se perder o voo?
+                        </a>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                    <div class="card-body">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <a href="collapse3" class="lead" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                          -> Qual a garantia que tenho se perder o voo?
+                        </a>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+                    <div class="card-body">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="heading4">
+                        <a href="collapse4" class="lead" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                          -> Qual a garantia que tenho se perder o voo?
+                        </a>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                    <div class="card-body">
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center my-5">
+            <p class="m-2">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Entre em Contato</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">Páginas</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="plans.html">Planos</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contato</a>
+                        </li>
+
+                        <li>
+                            <a href="signup.html">Inscreva-se</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">Locais</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="local.html">California</a>
+                        </li>
+
+                        <li>
+                            <a href="local.html">Paris</a>
+                        </li>
+
+                        <li>
+                            <a href="local.html">Dublin</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>lima@byronsolutions.com</li>
+                        <li>(35) 99877-5277</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="facebook.com" class="btn btn-sm btn-outline-secondary btn-block mb-2" style="max-width: 140px;">Facebook</a>
+                        </li>
+
+                        <li>
+                            <a href="twitter.com" class="btn btn-sm btn-outline-secondary btn-block mb-2" style="max-width: 140px;">Twitter</a>
+                        </li>
+
+                        <li>
+                            <a href="instagram.com" class="btn btn-sm btn-outline-secondary btn-block mb-2" style="max-width: 140px;">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center text-white">
+            <p class="mb-0">Caravan &copy 2021. Todos os Direitos reservados</p>
+        </div>
+    </footer>
     
 
     <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
