@@ -12,6 +12,14 @@ body{
     background-size: cover;
 }
 
+.list-plan li+li{
+    border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.list-plan li{
+    padding: 1rem;
+}
+
 
 @media (max-width: 768px) {
 
